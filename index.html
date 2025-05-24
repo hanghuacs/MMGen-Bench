@@ -7,11 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MMGen-Bench: Towards Comprehensive and Explainable Evaluation of Multi-Modal Image Generation Models</title>
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <!-- Use public CDNs for icon fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/icon.webp">
+  <style>
+    .icon img {
+      height: 1.1em;
+      vertical-align: middle;
+      margin-right: 2px;
+      margin-bottom: 2px;
+    }
+    .link-block {
+      margin-right: 0.5em;
+      margin-bottom: 0.5em;
+      display: inline-block;
+    }
+  </style>
 </head>
 <body>
 <div class="navbar-menu">
@@ -62,6 +76,12 @@
                 </a>
               </span>
               <span class="link-block">
+                <a href="https://arxiv.org/pdf/2511.12345" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
                 <a href="https://github.com/hanghuacs/MMGen-Bench" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
@@ -69,7 +89,9 @@
               </span>
               <span class="link-block">
                 <a href="https://huggingface.co/hhua2/mmgen-bench" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon"><i class="far fa-images"></i></span>
+                  <span class="icon">
+                    <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HF"/>
+                  </span>
                   <span>Data</span>
                 </a>
               </span>
