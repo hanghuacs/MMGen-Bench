@@ -2,52 +2,27 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="MMGen-Bench: Towards Comprehensive and Explainable Evaluation of Multi-Modal Image Generation Models">
+  <meta name="description" content="MMGen-Bench: Towards Comprehensive and Explainable Evaluation of Multi-Modal Image Generation Models">
   <meta name="keywords" content="Multi-Modal Image Generation, Benchmark, Compositionality, Evaluation, VQA">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MMGen-Bench: Towards Comprehensive and Explainable Evaluation of Multi-Modal Image Generation Models</title>
-
-  <!-- Google Fonts & Bulma CSS -->
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/icon.webp">
-
-  <!-- (Optional) Google Analytics -->
-  <!--
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-PYVRSFMDRL');
-  </script>
-  -->
 </head>
 <body>
-<!-- Navigation Bar (optional) -->
 <div class="navbar-menu">
   <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
     <div class="navbar-item has-dropdown is-hoverable">
       <p style="font-size:18px; display: inline; margin-right: -2px; margin-top: 12px;">🔥</p>
-      <a class="navbar-link">
-        More Research
-      </a>
+      <a class="navbar-link">More Research</a>
       <div class="navbar-dropdown">
-        <a class="navbar-item" href="https://hanghuacs.github.io/MMComposition/">
-          <b>MMComposition</b>
-        </a>
-        <a class="navbar-item" href="https://hanghuacs.github.io/finematch/">
-          <b>FineMatch</b>
-        </a>
-        <a class="navbar-item" href="https://yunlong10.github.io/VidComposition/">
-          <b>VidComposition</b>
-        </a>
+        <a class="navbar-item" href="https://hanghuacs.github.io/MMComposition/"><b>MMComposition</b></a>
+        <a class="navbar-item" href="https://hanghuacs.github.io/finematch/"><b>FineMatch</b></a>
+        <a class="navbar-item" href="https://yunlong10.github.io/VidComposition/"><b>VidComposition</b></a>
       </div>
     </div>
   </div>
@@ -81,22 +56,19 @@
           <div class="column has-text-centered">
             <div class="publication-links">
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2511.12345"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="https://arxiv.org/pdf/2511.12345" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fas fa-file-pdf"></i></span>
                   <span>Paper</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://github.com/hanghuacs/MMGen-Bench"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/hanghuacs/MMGen-Bench" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://huggingface.co/hhua2/mmgen-bench"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="https://huggingface.co/hhua2/mmgen-bench" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="far fa-images"></i></span>
                   <span>Data</span>
                 </a>
@@ -109,7 +81,46 @@
   </div>
 </section>
 
-<!-- You can add a teaser/abstract here if needed -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Recent advances in multi-modal image generation models have led to remarkable progress in both text-to-image (T2I) and personalized generation tasks. However, existing benchmarks are fragmented, focusing on only a subset of capabilities or lacking compositional, explainable evaluation. To fill this gap, we propose <b>MMGen-Bench</b>, a comprehensive benchmark for evaluating multi-modal image generation models. MMGen-Bench unifies compositional evaluation across T2I and customized generation, introduces explainable aspect-level metrics, and provides extensive human and automatic evaluations. Our results offer a thorough analysis of state-of-the-art diffusion, autoregressive, and API-based models, highlighting strengths and limitations and revealing future research directions for robust, explainable multi-modal generation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Contributions</h2>
+    <div class="content has-text-justified">
+      <ul>
+        <li><b>Unified Benchmark:</b> MMGen-Bench offers the first unified, compositional benchmark for both T2I and personalized (customization) image generation models.</li>
+        <li><b>Aspect-Level Explainability:</b> Proposes explainable aspect-level metrics (object, relation, attribute, counting) to evaluate fine-grained compositional capabilities.</li>
+        <li><b>Comprehensive Evaluation:</b> Provides extensive comparisons with human studies and automated metrics across 18 state-of-the-art models.</li>
+        <li><b>Open-Source Platform:</b> Publicly releases benchmark, code, datasets, and evaluation scripts to promote transparent and reproducible research.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Qualitative Examples (Figure 4)</h2>
+    <div class="columns is-centered">
+      <div class="column is-full-width has-text-centered">
+        <img src="./static/images/figure4.png" alt="Qualitative examples of MMGen-Bench (Figure 4)" style="max-width:100%;border-radius:16px;box-shadow:0 2px 8px #eee;">
+        <p class="is-size-5" style="margin-top:1em;"><b>Figure 4:</b> Representative qualitative results on MMGen-Bench. Our benchmark enables interpretable, compositional analysis of generation outputs at object, relation, attribute, and counting levels. (Replace this image with your actual Figure 4.)</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -132,23 +143,131 @@
             </thead>
             <tbody>
               <tr style="background-color:#e9edf6;"><td colspan="8" style="text-align:center; font-weight:bold;"><i>Diffusion Models</i></td></tr>
-              <tr><td>SDXL</td><td>33.529</td><td>14.340</td><td>79.08</td><td>72.29</td><td>6.337</td><td>0.277</td><td>0.120</td></tr>
-              <tr><td>Photon-v1</td><td>33.296</td><td>2.947</td><td>77.12</td><td>69.49</td><td>6.391</td><td>0.284</td><td>0.088</td></tr>
-              <tr><td>Lumina-2</td><td>33.281</td><td>15.531</td><td>84.11</td><td>73.18</td><td>6.048</td><td>0.287</td><td>0.116</td></tr>
-              <tr><td>HunyuanDit-v1.2</td><td>33.701</td><td>8.024</td><td>83.61</td><td>74.89</td><td>6.379</td><td>0.300</td><td>0.144</td></tr>
-              <tr><td>Pixart-Sigma-xl2</td><td>33.682</td><td>9.283</td><td>83.18</td><td>76.65</td><td>6.409</td><td>0.304</td><td>0.165</td></tr>
-              <tr><td>Flux.1-dev</td><td>33.017</td><td>2.171</td><td>84.44</td><td>76.44</td><td>6.433</td><td>0.307</td><td>0.210</td></tr>
-              <tr><td>SD 3.5-large</td><td>33.873</td><td>6.359</td><td>85.33</td><td>77.04</td><td>6.318</td><td>0.294</td><td>0.157</td></tr>
-              <tr><td>HiDream-I1-Full</td><td>33.876</td><td>1.522</td><td>89.65</td><td>83.18</td><td>6.457</td><td>0.321</td><td>0.450</td></tr>
+              <tr>
+                <td>SDXL</td>
+                <td><b>33.529</b></td>
+                <td><b>14.340</b></td>
+                <td><b>79.08</b></td>
+                <td><b>72.29</b></td>
+                <td><b>6.337</b></td>
+                <td><b>0.277</b></td>
+                <td><b>0.120</b></td>
+              </tr>
+              <tr>
+                <td>Photon-v1</td>
+                <td><b>33.296</b></td>
+                <td><b>2.947</b></td>
+                <td><b>77.12</b></td>
+                <td><b>69.49</b></td>
+                <td><b>6.391</b></td>
+                <td><b>0.284</b></td>
+                <td><b>0.088</b></td>
+              </tr>
+              <tr>
+                <td>Lumina-2</td>
+                <td><b>33.281</b></td>
+                <td><b>15.531</b></td>
+                <td><b>84.11</b></td>
+                <td><b>73.18</b></td>
+                <td><b>6.048</b></td>
+                <td><b>0.287</b></td>
+                <td><b>0.116</b></td>
+              </tr>
+              <tr>
+                <td>HunyuanDit-v1.2</td>
+                <td><b>33.701</b></td>
+                <td><b>8.024</b></td>
+                <td><b>83.61</b></td>
+                <td><b>74.89</b></td>
+                <td><b>6.379</b></td>
+                <td><b>0.300</b></td>
+                <td><b>0.144</b></td>
+              </tr>
+              <tr>
+                <td>Pixart-Sigma-xl2</td>
+                <td><b>33.682</b></td>
+                <td><b>9.283</b></td>
+                <td><b>83.18</b></td>
+                <td><b>76.65</b></td>
+                <td><b>6.409</b></td>
+                <td><b>0.304</b></td>
+                <td><b>0.165</b></td>
+              </tr>
+              <tr>
+                <td>Flux.1-dev</td>
+                <td><b>33.017</b></td>
+                <td><b>2.171</b></td>
+                <td><b>84.44</b></td>
+                <td><b>76.44</b></td>
+                <td><b>6.433</b></td>
+                <td><b>0.307</b></td>
+                <td><b>0.210</b></td>
+              </tr>
+              <tr>
+                <td>SD 3.5-large</td>
+                <td><b>33.873</b></td>
+                <td><b>6.359</b></td>
+                <td><b>85.33</b></td>
+                <td><b>77.04</b></td>
+                <td><b>6.318</b></td>
+                <td><b>0.294</b></td>
+                <td><b>0.157</b></td>
+              </tr>
+              <tr>
+                <td>HiDream-I1-Full</td>
+                <td><b><u>33.876</u></b></td>
+                <td><b><u>1.522</u></b></td>
+                <td><b><u>89.65</u></b></td>
+                <td><b><u>83.18</u></b></td>
+                <td><b><u>6.457</u></b></td>
+                <td><b><u>0.321</u></b></td>
+                <td><b><u>0.450</u></b></td>
+              </tr>
               <tr style="background-color:#e9edf6;"><td colspan="8" style="text-align:center; font-weight:bold;"><i>Autoregressive Models</i></td></tr>
-              <tr><td>JanusFlow</td><td>31.498</td><td>365.663</td><td>70.25</td><td>75.69</td><td>5.221</td><td>0.209</td><td>0.031</td></tr>
-              <tr><td>Janus-Pro-7B</td><td>33.358</td><td>31.954</td><td>85.35</td><td>80.36</td><td>6.038</td><td>0.275</td><td>0.129</td></tr>
+              <tr>
+                <td>JanusFlow</td>
+                <td><b>31.498</b></td>
+                <td><b>365.663</b></td>
+                <td><b>70.25</b></td>
+                <td><b>75.69</b></td>
+                <td><b>5.221</b></td>
+                <td><b>0.209</b></td>
+                <td><b>0.031</b></td>
+              </tr>
+              <tr>
+                <td>Janus-Pro-7B</td>
+                <td><b>33.358</b></td>
+                <td><b>31.954</b></td>
+                <td><b>85.35</b></td>
+                <td><b>80.36</b></td>
+                <td><b>6.038</b></td>
+                <td><b>0.275</b></td>
+                <td><b>0.129</b></td>
+              </tr>
               <tr style="background-color:#e9edf6;"><td colspan="8" style="text-align:center; font-weight:bold;"><i>API-based Models</i></td></tr>
-              <tr><td>Gemini-2.0-Flash</td><td>32.433</td><td>11.053</td><td>85.35</td><td>81.98</td><td>6.102</td><td>0.275</td><td>0.110</td></tr>
-              <tr><td>GPT-4o</td><td>32.380</td><td>3.497</td><td>82.57</td><td>81.02</td><td>6.719</td><td>0.279</td><td>0.263</td></tr>
+              <tr>
+                <td>Gemini-2.0-Flash</td>
+                <td><b>32.433</b></td>
+                <td><b>11.053</b></td>
+                <td><b>85.35</b></td>
+                <td><b>81.98</b></td>
+                <td><b>6.102</b></td>
+                <td><b>0.275</b></td>
+                <td><b>0.110</b></td>
+              </tr>
+              <tr>
+                <td>GPT-4o</td>
+                <td><b>32.380</b></td>
+                <td><b>3.497</b></td>
+                <td><b>82.57</b></td>
+                <td><b>81.02</b></td>
+                <td><b>6.719</b></td>
+                <td><b>0.279</b></td>
+                <td><b>0.263</b></td>
+              </tr>
             </tbody>
           </table>
-          <p class="is-bold">Table 1. Quantitative comparison across 12 text-to-image models using 2,100 prompts.</p>
+          <p class="is-bold">Table 1. Quantitative comparison across 12 text-to-image models using 2,100 prompts. <b>Bold</b> indicates all values; <b><u>Underline</u></b> marks the best in each column.</p>
         </div>
 
         <h2 class="title is-3">Comparison of Multi-Modal Generation Models (Customization Task)</h2>
@@ -171,44 +290,105 @@
             </thead>
             <tbody>
               <tr style="background-color:#e9edf6;"><td colspan="11" style="text-align:center; font-weight:bold;"><i>Diffusion Models</i></td></tr>
-              <tr><td>BLIP Diffusion</td><td>26.137</td><td>80.286</td><td>26.232</td><td>69.681</td><td>56.780</td><td>0.247</td><td>41.59</td><td>5.830</td><td>0.213</td><td>0.032</td></tr>
-              <tr><td>DreamBooth</td><td>24.227</td><td>88.758</td><td>38.961</td><td>79.780</td><td>43.535</td><td>0.108</td><td>28.00</td><td>5.368</td><td>0.179</td><td>0.019</td></tr>
-              <tr><td>Emu2</td><td>28.410</td><td>79.026</td><td>31.831</td><td>71.132</td><td>10.461</td><td>0.378</td><td>53.13</td><td>5.639</td><td>0.243</td><td>0.066</td></tr>
-              <tr><td>Ip-Adapter-XL</td><td>28.577</td><td>85.297</td><td>34.177</td><td>74.995</td><td>8.531</td><td>0.290</td><td>51.10</td><td>5.840</td><td>0.233</td><td>0.073</td></tr>
-              <tr><td>MS Diffusion</td><td>31.446</td><td>77.827</td><td>23.600</td><td>71.306</td><td>4.748</td><td>0.496</td><td>71.40</td><td>5.979</td><td>0.271</td><td>0.143</td></tr>
+              <tr>
+                <td>BLIP Diffusion</td>
+                <td><b>26.137</b></td>
+                <td><b>80.286</b></td>
+                <td><b>26.232</b></td>
+                <td><b>69.681</b></td>
+                <td><b>56.780</b></td>
+                <td><b>0.247</b></td>
+                <td><b>41.59</b></td>
+                <td><b>5.830</b></td>
+                <td><b>0.213</b></td>
+                <td><b>0.032</b></td>
+              </tr>
+              <tr>
+                <td>DreamBooth</td>
+                <td><b>24.227</b></td>
+                <td><b><u>88.758</u></b></td>
+                <td><b><u>38.961</u></b></td>
+                <td><b><u>79.780</u></b></td>
+                <td><b>43.535</b></td>
+                <td><b>0.108</b></td>
+                <td><b>28.00</b></td>
+                <td><b>5.368</b></td>
+                <td><b>0.179</b></td>
+                <td><b>0.019</b></td>
+              </tr>
+              <tr>
+                <td>Emu2</td>
+                <td><b>28.410</b></td>
+                <td><b>79.026</b></td>
+                <td><b>31.831</b></td>
+                <td><b>71.132</b></td>
+                <td><b>10.461</b></td>
+                <td><b>0.378</b></td>
+                <td><b>53.13</b></td>
+                <td><b>5.639</b></td>
+                <td><b>0.243</b></td>
+                <td><b>0.066</b></td>
+              </tr>
+              <tr>
+                <td>Ip-Adapter-XL</td>
+                <td><b>28.577</b></td>
+                <td><b>85.297</b></td>
+                <td><b>34.177</b></td>
+                <td><b>74.995</b></td>
+                <td><b>8.531</b></td>
+                <td><b>0.290</b></td>
+                <td><b>51.10</b></td>
+                <td><b>5.840</b></td>
+                <td><b>0.233</b></td>
+                <td><b>0.073</b></td>
+              </tr>
+              <tr>
+                <td>MS Diffusion</td>
+                <td><b>31.446</b></td>
+                <td><b>77.827</b></td>
+                <td><b>23.600</b></td>
+                <td><b>71.306</b></td>
+                <td><b>4.748</b></td>
+                <td><b>0.496</b></td>
+                <td><b>71.40</b></td>
+                <td><b>5.979</b></td>
+                <td><b>0.271</b></td>
+                <td><b>0.143</b></td>
+              </tr>
               <tr style="background-color:#e9edf6;"><td colspan="11" style="text-align:center; font-weight:bold;"><i>API-based Models</i></td></tr>
-              <tr><td>GPT-4o</td><td>33.527</td><td>75.152</td><td>25.174</td><td>64.776</td><td>1.973</td><td>0.672</td><td>90.90</td><td>6.368</td><td>0.289</td><td>0.550</td></tr>
+              <tr>
+                <td>GPT-4o</td>
+                <td><b><u>33.527</u></b></td>
+                <td><b>75.152</b></td>
+                <td><b>25.174</b></td>
+                <td><b>64.776</b></td>
+                <td><b><u>1.973</u></b></td>
+                <td><b><u>0.672</u></b></td>
+                <td><b><u>90.90</u></b></td>
+                <td><b><u>6.368</u></b></td>
+                <td><b><u>0.289</u></b></td>
+                <td><b><u>0.550</u></b></td>
+              </tr>
             </tbody>
           </table>
-          <p class="is-bold">Table 2. Quantitative comparison across 6 multi-modal image generation models (1,690 samples).</p>
+          <p class="is-bold">Table 2. Quantitative comparison across 6 multi-modal image generation models (1,690 samples). <b>Bold</b> indicates all values; <b><u>Underline</u></b> marks the best in each column.</p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link" href="https://arxiv.org/pdf/2511.12345">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/hanghuacs/MMGen-Bench" class="external-link">
-        <i class="fab fa-github"></i>
-      </a>
+      <a class="icon-link" href="https://arxiv.org/pdf/2511.12345"><i class="fas fa-file-pdf"></i></a>
+      <a class="icon-link" href="https://github.com/hanghuacs/MMGen-Bench" class="external-link"><i class="fab fa-github"></i></a>
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            You are welcome to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website.
-          </p>
+          <p>This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+          <p>You are welcome to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website.</p>
         </div>
       </div>
     </div>
