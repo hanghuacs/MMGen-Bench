@@ -2,17 +2,17 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="MMGen-Bench: Towards Comprehensive and Explainable Evaluation of Multi-Modal Image Generation Models">
+  <meta name="description" content="MMIG-Bench: Towards Comprehensive and Explainable Evaluation of Multi-Modal Image Generation Models">
   <meta name="keywords" content="Multi-Modal Image Generation, Benchmark, Compositionality, Evaluation, VQA">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MMGen-Bench: Towards Comprehensive and Explainable Evaluation of Multi-Modal Image Generation Models</title>
+  <title>MMIG-Bench: Towards Comprehensive and Explainable Evaluation of Multi-Modal Image Generation Models</title>
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <!-- Use public CDNs for icon fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/mmgen-bench.png">
+  <link rel="icon" href="./static/images/MMIG-Bench.png">
   <style>
     .icon img {
       height: 1.1em;
@@ -49,8 +49,8 @@
       <div class="columns is-centered">
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">
-            <img src="./static/images/mmgen-bench.png" width="50" style="vertical-align:middle;margin-bottom:8px;" />
-            <span class="rainbow_text_animated">MMGen-Bench</span>: Towards Comprehensive and Explainable Evaluation of Multi-Modal Image Generation Models
+            <img src="./static/images/MMIG-Bench.png" width="50" style="vertical-align:middle;margin-bottom:8px;" />
+            <span class="rainbow_text_animated">MMIG-Bench</span>: Towards Comprehensive and Explainable Evaluation of Multi-Modal Image Generation Models
           </h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block"><a href="https://hanghuacs.notion.site/">Hang Hua</a><sup>1</sup>,</span>
@@ -86,13 +86,13 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://github.com/hanghuacs/MMGen-Bench" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/hanghuacs/MMIG-Bench" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://huggingface.co/datasets/hhua2/MMGen-Bench" class="external-link button is-normal is-rounded is-dark">
+                <a href="https://huggingface.co/datasets/hhua2/MMIG-Bench" class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="HF"/>
                   </span>
@@ -114,7 +114,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Recent advances in multi-modal image generation models have led to remarkable progress in both text-to-image (T2I) and personalized generation tasks. However, existing benchmarks are fragmented, focusing on only a subset of capabilities or lacking compositional, explainable evaluation. To fill this gap, we propose <b>MMGen-Bench</b>, a comprehensive benchmark for evaluating multi-modal image generation models. MMGen-Bench unifies compositional evaluation across T2I and customized generation, introduces explainable aspect-level metrics, and provides extensive human and automatic evaluations. Our results offer a thorough analysis of state-of-the-art diffusion, autoregressive, and API-based models, highlighting strengths and limitations and revealing future research directions for robust, explainable multi-modal generation.
+            Recent advances in multi-modal image generation models have led to remarkable progress in both text-to-image (T2I) and personalized generation tasks. However, existing benchmarks are fragmented, focusing on only a subset of capabilities or lacking compositional, explainable evaluation. To fill this gap, we propose <b>MMIG-Bench</b>, a comprehensive benchmark for evaluating multi-modal image generation models. MMIG-Bench unifies compositional evaluation across T2I and customized generation, introduces explainable aspect-level metrics, and provides extensive human and automatic evaluations. Our results offer a thorough analysis of state-of-the-art diffusion, autoregressive, and API-based models, highlighting strengths and limitations and revealing future research directions for robust, explainable multi-modal generation.
           </p>
         </div>
       </div>
@@ -127,7 +127,7 @@
     <h2 class="title is-3">Contributions</h2>
     <div class="content has-text-justified">
       <ul>
-        <li><b>Unified Benchmark:</b> MMGen-Bench offers the first unified, compositional benchmark for both T2I and personalized (customization) image generation models.</li>
+        <li><b>Unified Benchmark:</b> MMIG-Bench offers the first unified, compositional benchmark for both T2I and personalized (customization) image generation models.</li>
         <li><b>Aspect-Level Explainability:</b> Proposes explainable aspect-level metrics (object, relation, attribute, counting) to evaluate fine-grained compositional capabilities.</li>
         <li><b>Comprehensive Evaluation:</b> Provides extensive comparisons with human studies and automated metrics across 18 state-of-the-art models.</li>
         <li><b>Open-Source Platform:</b> Publicly releases benchmark, code, datasets, and evaluation scripts to promote transparent and reproducible research.</li>
@@ -139,8 +139,8 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-full-width has-text-centered">
-        <img src="./static/images/teaser.png" alt="Overview of MMGen-Bench" style="max-width:100%;border-radius:16px;box-shadow:0 2px 8px #eee;">
-        <p class="is-size-5" style="margin-top:1em;">Overview of MMGen-Bench. We present a unified multi-modal benchmark which contains
+        <img src="./static/images/teaser.png" alt="Overview of MMIG-Bench" style="max-width:100%;border-radius:16px;box-shadow:0 2px 8px #eee;">
+        <p class="is-size-5" style="margin-top:1em;">Overview of MMIG-Bench. We present a unified multi-modal benchmark which contains
 1,750 multi-view reference images with 4,850 richly annotated text prompts, covering both text-only
 and image-text-conditioned generation. We also propose a comprehensive three-level evaluation
 framework: low-level of artifacts and identity preservation, mid-level of VQA-based Aspect Matching
@@ -155,8 +155,8 @@ Score, and high-level of aesthetics and human preferences—delivers holistic an
     <h2 class="title is-3">Qualitative Examples of Different Models</h2>
     <div class="columns is-centered">
       <div class="column is-full-width has-text-centered">
-        <img src="./static/images/figure4.png" alt="Qualitative examples of MMGen-Bench" style="max-width:100%;border-radius:16px;box-shadow:0 2px 8px #eee;">
-        <p class="is-size-5" style="margin-top:1em;"> Representative qualitative results on MMGen-Bench. Our benchmark enables interpretable, compositional analysis of generation outputs at object, relation, attribute, and counting levels.</p>
+        <img src="./static/images/figure4.png" alt="Qualitative examples of MMIG-Bench" style="max-width:100%;border-radius:16px;box-shadow:0 2px 8px #eee;">
+        <p class="is-size-5" style="margin-top:1em;"> Representative qualitative results on MMIG-Bench. Our benchmark enables interpretable, compositional analysis of generation outputs at object, relation, attribute, and counting levels.</p>
       </div>
     </div>
   </div>
@@ -422,7 +422,7 @@ Score, and high-level of aesthetics and human preferences—delivers holistic an
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link" href="https://arxiv.org/pdf/2511.12345"><i class="fas fa-file-pdf"></i></a>
-      <a class="icon-link" href="https://github.com/hanghuacs/MMGen-Bench" class="external-link"><i class="fab fa-github"></i></a>
+      <a class="icon-link" href="https://github.com/hanghuacs/MMIG-Bench" class="external-link"><i class="fab fa-github"></i></a>
     </div>
     <div class="columns is-centered">
       <div class="column is-8">
